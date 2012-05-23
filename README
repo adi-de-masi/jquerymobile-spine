@@ -1,0 +1,7 @@
+A very simple proof of concept that shows how jquerymobile.com and spinejs.com can be combined.
+
+Note that the basic structure was generated using Spine.app. Modifications:
+- remove jqueryify from slug.json and uninstall it by removing it from package.json and not requiring it in app/lib/setup.coffee
+- include jquery and -mobile libraries in public/index.html
+- bind to mobileinit for initializing Spine
+- use the pagebeforechange event for intercepting the regualar page jquerymobile page rendering workflow. there you can generate markup client-side (done here with coffeescript-haml)

@@ -1,0 +1,32 @@
+info it worked if it ends with ok
+verbose cli [ 'node', '/usr/local/bin/npm', 'install', '.pwd' ]
+info using npm@1.1.21
+info using node@v0.6.16
+verbose /usr/local/bin/node node symlink
+verbose config file /Users/ademasi/.npmrc
+verbose config file /usr/local/etc/npmrc
+verbose config file /usr/local/lib/node_modules/npm/npmrc
+verbose caching /Users/ademasi/panter/ausbildung/controllr/assessment/jquerymobile_spine/package.json
+verbose loadDefaults app@0.0.1
+verbose from cache /Users/ademasi/panter/ausbildung/controllr/assessment/jquerymobile_spine/package.json
+verbose readDependencies: using package.json deps
+verbose cache add [ '.pwd', null ]
+silly cache add: name, spec, args [ undefined, '.pwd', [ '.pwd', null ] ]
+verbose parsed url { pathname: '.pwd', path: '.pwd', href: '.pwd' }
+ERR! Could not install: .pwd
+ERR! Error: ENOENT, stat '.pwd'
+ERR! You may report this log at:
+ERR!     <http://github.com/isaacs/npm/issues>
+ERR! or email it to:
+ERR!     <npm-@googlegroups.com>
+ERR! 
+ERR! System Darwin 11.4.0
+ERR! command "node" "/usr/local/bin/npm" "install" ".pwd"
+ERR! cwd /Users/ademasi/panter/ausbildung/controllr/assessment/jquerymobile_spine/public
+ERR! node -v v0.6.16
+ERR! npm -v 1.1.21
+ERR! path .pwd
+ERR! code ENOENT
+ERR! message ENOENT, stat '.pwd'
+ERR! errno {}
+verbose exit [ 1, true ]
