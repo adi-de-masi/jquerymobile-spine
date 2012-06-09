@@ -4,6 +4,7 @@ class Pocs extends Spine.Controller
   constructor: ->
     super
     @count = 0
+    @startTalking()
 
   incrementCount: ->
     @count = @count + 1
@@ -16,5 +17,10 @@ class Pocs extends Spine.Controller
     @incrementCount()
     require('views/pocs')(@)
 
+  startTalking: =>
+    setInterval(@talk,1000, null)
+
+  talk: =>
+    @log "This is controller #{@count} talking..."
     
 module.exports = Pocs

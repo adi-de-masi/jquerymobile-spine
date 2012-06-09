@@ -23,7 +23,8 @@ class App extends Spine.Controller
         @navigate(data)
 
   navigate: (jqmData) =>
-    page = @pocs.render()
+    #page = @pocs.render()
+    page = new Pocs(el: @el).render()
     page = $(page)
     page.page().appendTo("body")
     page.find(":jqmData(role=button)").button()
